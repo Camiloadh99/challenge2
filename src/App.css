@@ -17,17 +17,35 @@ h1 {
 h2 {
   font-size: 2vw;
 }
+
 .container {
   min-width: 100vw;
   min-height: 100vh;
   position: relative;
 }
+
 .center-items {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.container.Desktop {
+  background-color: rgb(75, 192, 192);
+}
+.container.Mobile-portrait {
+  background-color: rgb(255, 99, 132);
+}
+.container.Mobile-landscape {
+  background-color: rgb(255, 159, 64);
+}
+.container.Tablet-portrait {
+  background-color: rgb(255, 205, 86);
+}
+.container.Tablet-landscape {
+  background-color: rgb(153, 102, 255);
 }
 
 @media (prefers-reduced-motion: no-preference) {

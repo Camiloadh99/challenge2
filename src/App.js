@@ -7,7 +7,7 @@ function App() {
   const diviceTypeString = diviceType(windowSize?.width);
 
   return (
-    <div className="container">
+    <div className={`container ${diviceTypeString}`}>
       <div className="center-items">
         <h1>
           Width x height: {windowSize?.width} x {windowSize?.height}
