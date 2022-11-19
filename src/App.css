@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -7,9 +11,36 @@
   pointer-events: none;
 }
 
+h1 {
+  font-size: 3vw;
+}
+h2 {
+  font-size: 2vw;
+}
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+.center-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 120%;
+  }
+  h2 {
+    font-size: 90%;
   }
 }
 
